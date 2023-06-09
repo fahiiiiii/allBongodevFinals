@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageDam</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="icon" href="./assets/picturesOfMine/favicon.ico" />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="text-f-color px-52 pt-36">
+    <!-- top nav  -->
+    <nav class="bg-top-nav fixed top-0 left-0 right-0 w-screen flex flex-col">
+      <div class="flex justify-between gap-10 p-6">
+        <div class="pt-0 pl-4 w-44">
+          <img src="assets/picturesOfMine/branding.jpg" alt="" />
+        </div>
+
+        <!-- <div class="relative w-3/5  bg-f-color fixed  ">
+            
+            </div> -->
+
+            <div class="h-full flex flex-col justify-start mb-4">
+                <div class="flex">
+                    <button class="bg-f-color border-0 text-co-bl py-1 px-3">
+                        <i class="bx bx-search pl-3"></i>
+                    </button>
+                    <button class="bg-f-color border-0 py-1 px-3">
+                        <input placeholder="Search Files...">
+                    </button>
+                    <button class="bg-f-color border-0 text-co-bl flex py-1 px-3">
+                        <p>X | </p>
+                      <p>45089 File(s) </p>
+                      <p><i class="bx bx-chevron-down"></i></p>
+                    </button>
+                </div>
+                <div class="mb-2 flex justify-between gap-3">
+                    <p>Size <i class="bx bxs-right-arrow"></i></p>
+                    <p>Orientation <i class="bx bxs-right-arrow text-sm"></i></p>
+                    <p>Metadata <i class="bx bxs-right-arrow"></i></p>
+                  </div>
+            </div>
+
+            <!-- --------------------------------- -->
+
+        <!-- <div class="flex flex-col">
+          <div>
+            <form>
+              <div class="flex justify-start ps-2">
+                <button
+                  type="submit"
+                  class="bg-f-color text-white m-7 px-4 rounded-r-lg text-co-bl h-8 w-96"
+                >
+                  <div class="flex justify-between">
+                    <div class="flex">
+                      <i class="bx bx-search"></i>
+                      <p class="text-grey-clr">Search Files...</p>
+                    </div>
+
+                    <div class="flex">
+                      <p>X |</p>
+                      <p>45089 File(s)</p>
+                      <p><i class="bx bx-chevron-down"></i></p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="flex justify-between gap-3">
+            <p>Size <i class="bx bxs-right-arrow"></i></p>
+            <p>Orientation <i class="bx bxs-right-arrow text-sm"></i></p>
+            <p>Metadata <i class="bx bxs-right-arrow"></i></p>
+          </div>
+        </div> -->
+
+        <span class="flex gap-5">
+          <p><i class="bx bxs-cog"></i>Advanced Settings</p>
+          <p class="pr-2"><i class="bx bxs-user-circle"></i>Fahimah</p>
+        </span>
+      </div>
+    </nav>
+
+    <!-- sub nav  -->
+    <div
+      class="bg-main-body-bg fixed left-0 right-0 top-20 p-5 flex justify-between"
+    >
+      <div class="flex">
+        <p><i class='bx bxs-cloud-upload'></i></p>
+        <p>Import File</p>
+      </div>
+      <div class="flex justify-between gap-4">
+        <div class="flex gap-2">
+          <p><i class='bx bx-upload'></i></p>
+          <p>Publish</p>
+        </div>
+        <div class="flex gap-2">
+          <p><i class='bx bxs-download'></i></p>
+          <p>Download</p>
+        </div>
+        <div class="flex gap-2">
+          <p><i class='bx bx-git-repo-forked bx-flip-vertical' ></i></p>
+          <p>Organize</p>
+        </div>
+        <div class="flex gap-2">
+          <p><i class='bx bxs-right-arrow-square'></i></p>
+          <p>Move</p>
+        </div>
+        <div class="flex gap-2">
+          <p><i class='bx bxs-share-alt' ></i></p>
+          <p>Share</p>
+        </div>
+        <div class="flex gap-2">
+          <p><i class='bx bx-dots-horizontal-rounded' ></i></p>
+          <p>More</p>
+        </div>
+      </div>
+      <div>
+        <i class="bx bxs-grid"></i>
+        <i class="bx bx-grid-alt"></i>
+        <i class="bx bxs-grid-alt"></i>
+      </div>
+      <div>X Delete</div>
+    </div>
+
+    <!-- left--nav -->
+    <div class="fixed left-0 top-36 w-52 h-screen bg-main-body-bg">
+      <div class="bg-top-nav pt-6 w-52">
+        <button class="bg-btc p-2 text-sm mb-0">Categories</button>
+        <button class="text-btc text-xs px-2">Library</button>
+        <button class="text-btc text-xs">Agreements</button>
+      </div>
+
+      <div class="flex justify-between text-sm pt-6">
+        <p><i class="bx bxs-folder"></i>Categories</p>
+        <p class="pr-2"><i class="bx bxs-toggle-left"></i>Extended Search</p>
+      </div>
+
+      <div class="flex justify-end mt-4 mr-4"></div>
+
+      <div class="w-3 h-2">
+        <button class="ml-1 relative bg-f-color border-0">
+          <input placeholder="Search category">
+        </button>
+        <button class="absolute right-4 bg-grf border-0 mr-2">
+          <p class="text-lg ps-3 pr-1"><i class='bx bx-search bx-flip-horizontal' ></i></p>
+        </button>
+      </div>
+
+      <div class="flex flex-col p-5">
+
+        <div class="flex">
+          <p><i class='bx bx-square'></i></p>
+          <p>EmailGraphics</p>
+        </div>
+        <div class="flex">
+          <p><i class='bx bx-square'></i></p>
+          <p>Interest</p>
+        </div>
+        <div class="flex">
+          <p><i class='bx bx-square'></i></p>
+          <p>Landing Page</p>
+        </div>
+        <div class="flex">
+         <p> <i class='bx bx-square'></i></p>
+          <p>People</p>
+        </div>
+        <div class="flex">
+          <p><i class='bx bx-check-square'></i></p>
+          <p>Peytcn</p>
+        </div>
+        <div class="flex">
+          <p><i class='bx bx-square'></i></p>
+          <p>Staff</p>
+        </div>
+        <div class="flex">
+          <p><i class='bx bx-check-square'></i></p>
+          <p>Trips</p>
+        </div>
+        <div class="flex">
+          <p><i class='bx bx-square'></i></p>
+          <p>User</p>
+        </div>
+        <div class="flex">
+          <p><i class='bx bx-square'></i></p>
+          <p>Video</p>
+        </div>
+        <div class="flex">
+         <p><i class='bx bx-check-square'></i></p>
+          <p>Web</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- right--nav -->
+    <div class="fixed right-0 top-36 w-52 h-screen bg-main-body-bg">
+      <div class="p-2">
+        <div class="px-2 flex gap-2">
+          <button class="bg-grf p-2">Information</button>
+          <button class="text-btc">Metadata</button>
+        </div>
+        <img src="./assets/picturesOfMine/82.jpg" alt="" />
+        <caption class="text-4xl p-4">
+          Fahimah
+        </caption>
+        <div class="flex p-5 text-sm">
+          <div>
+            <p>Id</p>
+            <p>Vault</p>
+            <p>Date Uploaded</p>
+            <p><br /></p>
+            <p>Uploaded By</p>
+            <p>Categories</p>
+            <p>File Extension</p>
+            <p>File Size</p>
+            <p>Width</p>
+            <p>Height</p>
+            <p>Area Of Interest</p>
+            <p>Tags</p>
+            <p>Description</p>
+          </div>
+          <div class="text-grf">
+            <p>988205</p>
+            <p>EmailGraphics</p>
+            <p><br /></p>
+            <p>27/05/2023</p>
+            <p>23.04.24</p>
+            <p><br /></p>
+            <p>Fahimah</p>
+            <p>EmailGraphics</p>
+            <p>jpeg</p>
+            <p>53.5kb</p>
+            <p>488</p>
+            <p>488</p>
+            <p>Yes</p>
+          </div>
+        </div>
+        <div>
+          <h2 class="px-6">Published on</h2>
+          <p class="px-5">View Publishes<i class="bx bx-link-external"></i></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- main--body -->
+    <div class="bg-sub-nav h-screen flex gap-1">
+      <div class="flex flex-col gap-2 p-3">
+        <img src="./assets/picturesOfMine/111.jpg" alt="" />
+        <img src="./assets/picturesOfMine/11.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/21.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/33.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/43.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/53.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/63.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/73.jpeg" alt="" />
+      </div>
+
+      <div class="flex flex-col gap-2 p-3">
+        <img src="./assets/picturesOfMine/46.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/37.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/47.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/57.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/67.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/77.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/52.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/62.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/72.jpeg" alt="" />
+      </div>
+
+      <div class="flex flex-col gap-2 p-3">
+        <img src="./assets/picturesOfMine/3.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/13.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/23.jpeg" alt="" />
+
+        <img src="./assets/picturesOfMine/31.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/41.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/51.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/61.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/71.jpeg" alt="" />
+      </div>
+
+      <div class="flex flex-col gap-2 p-3">
+        <img src="./assets/picturesOfMine/6.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/16.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/26.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/34.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/44.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/54.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/64.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/74.jpeg" alt="" />
+      </div>
+
+      <div class="flex flex-col gap-2 p-3">
+        <img src="./assets/picturesOfMine/45.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/81.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/55.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/65.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/75.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/5.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/15.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/25.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/35.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/1.jpeg" alt="" />
+      </div>
+
+      <div class="flex flex-col gap-2 p-3">
+        <img src="./assets/picturesOfMine/66.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/4.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/14.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/24.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/36.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/46.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/56.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/76.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/42.jpeg" alt="" />
+      </div>
+
+      <div class="flex flex-col gap-2 p-3">
+        <img src="./assets/picturesOfMine/32.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/7.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/17.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/27.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/2.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/12.jpeg" alt="" />
+        <img src="./assets/picturesOfMine/22.jpeg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
