@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.6s ease;
+}
+header{
+    margin: 10px 10px;
+}
+body{
+    
+    margin: auto;
+    width: 80%;
+    color: white;
+}
+.name{
+    color: white;
+    /* padding-top: 20px;
+    padding-left: 20px; */
+}
+.navigation span{
+    color: red;
+}
+.navbar{
+    background: black;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 1px;
+    padding: 5px 5px;
+    
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    color: aquamarine;
+}
+ul li button{
+    background: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 59%;
+    margin-right: 10px;
+}
+.main{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.para{
+    background: rgb(41, 35, 35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Times, serif;
+    align-items: center;
+    
+    
+    flex-wrap: wrap;
+
+}
+
+h1{
+    color: white;
+}
+span{
+    color: rgb(172, 138, 75);
+}
+.div2{
+    color: white;
+    justify-content: center;
+}
+button{
+    background: rgb(172, 138, 75);
+    color: black;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 70%;
+   
+}
+button:hover{
+    cursor: pointer;
+}
+.main img{
+    width: 120%;
+    height: 100%;
+
+}
+.ass2{
+    margin-top: 50px;
+    color: white;
+    background: rgb(41, 35, 35);
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: large;
+    margin-bottom: 150px;
+
+
+}
+/* .ass2 .location .des p{
+    text-align: center; 
+}*/
+.phone,.mail,.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px 15px;
+    margin-bottom: 40px;
+}
+.div1,.div2,.div3{
+    justify-content: center;
+    
+}
+.logo,.des{
+    justify-content: center;
+    
+}
+.details{
+    margin-top: 20px;
+}
+
+
+.grid{
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr ; 
+    gap: 1px;
+    
+    
+    /* grid-template-rows: 200px 100px; */
+}
+.grid h1{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.grid1,.grid2{
+    display: grid;
+    /* grid-template-rows: 200px 100px; */
+    grid-template-columns: 1fr 3fr;
+    background: rgb(179, 134, 57);
+   
+    margin: 15px 40px 50px 20px;
+    justify-content: center;
+    height: 200px;
+    width: 80%;
+    
+}
+ 
+/*.grid2{
+    display: grid;
+    /* grid-template-rows: 200px 100px; 
+    grid-template-columns: 1fr 3fr;
+    background: rgb(136, 123, 100);
+    gap: 10px; 
+ } */
+
+ 
+.grid2{
+    margin-bottom: 40px;
+}
+.grid1 img{
+    width: 40%;
+    border-radius: 50%;
+    padding: 30px 20px;
+}
+.grid2 img{
+    width: 40%;
+    border-radius: 50%;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+.item2 p,.item4 p{
+    /* padding: 10%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    padding: 0 0;
+    margin-top: 50px;
+    
+    
+}
+.item1,.item2,.item3,.item4{
+    justify-content: center;
+}
