@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {},
     colors:{
-      "top-nav" : "#212A3E",
+      // "top-nav" : "#212A3E",
+      "top-nav" :"#213555",
+      //  "sub-nav" :"#146C94",
       "sub-nav" : "#8AAAE5", 
       "f-color": "#f6f6f6",
       "main-body-bg": "#3F4C6B",
